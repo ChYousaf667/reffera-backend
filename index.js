@@ -30,7 +30,7 @@ const fileFilter = (req, file, cb) => {
 const upload = multer({ storage, fileFilter });
 
 // Restrict CORS to frontend domain
-app.use(cors({ origin: "https://refeera.vercel.app" }));
+app.use(cors({ origin: "https://elegant-frangollo-6ea409.netlify.app/" }));
 
 connectDB();
 
