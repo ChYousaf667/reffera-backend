@@ -1,6 +1,6 @@
 const express = require("express");
 const errorHandler = require("./middlewares/errorMiddleware");
-const connectDB = require("./config/connectDB");
+const connectDB = require("./config/connectdb");
 const cors = require("cors");
 const multer = require("multer");
 const path = require("path");
