@@ -17,7 +17,7 @@ const generateReferralLink = async (partnerId, offerId) => {
   const referral = new Referral({ referralId, partnerId, offerId });
   await referral.save();
 
-  return `http://localhost:5173/form?referralId=${referralId}&partnerId=${partnerId}&offerId=${offerId}`;
+  return `https://refeera.vercel.app/form?referralId=${referralId}&partnerId=${partnerId}&offerId=${offerId}`;
 };
 
 const processFormSubmission = async (data) => {
